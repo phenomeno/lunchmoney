@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="lunchmoney">
+    <head>
+        <title>Lunch Money</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta 
+            http-equiv="Content-Security-Policy" 
+            content="default-src 'self' 
+                data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+                style-src 'self' 'unsafe-inline'; media-src *" 
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta 
+            name="viewport" 
+            content="user-scalable=no, initial-scale=1, maximum-scale=1, 
+            minimum-scale=1, width=device-width" 
+        />
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+    
+        <script src="js/libs/angular.js"></script>
+        <script src="js/libs/angular-animate.min.js"></script>
+        <script src="js/libs/ui-bootstrap-tpls-0.13.3.min.js"></script>
+    </head>
+    <body>
+        <div ng-controller="GateController" style="height:100%;">
+            <div ng-include="appview" style="height:100%;">
+            ddfdf
+            </div>
+        </div>
+        
+
+        <!-- Epistore App object -->
+        <script src="js/app.js" type="text/javascript"></script>
+        
+        <!-- Services -->
+        <script src="js/services/gate.service.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/gate.controller.js"></script>
+
+    </body>
+</html>

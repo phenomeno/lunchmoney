@@ -1,0 +1,7 @@
+html { font-family: heveltica, sans-serif; }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+#page { background-color: #beff5a; }
+
+button { margin-left: 2px; margin-right: 2px; margin-top:5px;}

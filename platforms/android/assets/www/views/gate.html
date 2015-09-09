@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row" id="page">
+        <div class="col-xs-8 col-xs-offset-2">
+           <div style="height:100vh">
+                <h1 class="text-center">{{ lm }}</h1>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <button 
+                            class="btn btn-info" 
+                            type="button" 
+                            ng-repeat="x in dollar_increment"
+                    >
+                       <i class="glyphicon glyphicon-plus"></i> {{ x }}
+                    </button> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <button 
+                            class="btn btn-danger" 
+                            type="button" 
+                            ng-repeat="x in dollar_increment"
+                    >
+                       <i class="glyphicon glyphicon-minus"></i> 
+                       {{ x }}
+                    </button> 
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>

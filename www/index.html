@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="lunchmoney">
+    <head>
+        <title>Lunch Money</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta 
+            http-equiv="Content-Security-Policy" 
+            content="default-src 'self' 
+                data: gap: https://ssl.gstatic.com 'unsafe-eval'; 
+                style-src 'self' 'unsafe-inline'; media-src *" 
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta 
+            name="viewport" 
+            content="user-scalable=no, initial-scale=1, maximum-scale=1, 
+            minimum-scale=1, width=device-width" 
+        />
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/flat-ui.min.css">
+
+    
+        <script src="js/libs/angular.js"></script>
+        <script src="js/libs/angular-animate.min.js"></script>
+        <script src="js/libs/ui-bootstrap-tpls-0.13.3.min.js"></script>
+        <script src="js/libs/angular-route.min.js"></script>
+    </head>
+    <body>
+        <div ng-controller="LoginController" style="height:100vh; width:100vw" id="page">
+            <div ng-view style="height:90%"></div>
+            <div class="row">
+                <div class="col-xs-12" style="background-color:#FFF1AA">
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#/">
+                                <span class="fui-time"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="/">
+                                "Lunch Money"
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/history">
+                                History
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav> -->
+        </div>
+        
+
+        <!-- Epistore App object -->
+        <script src="js/app.js" type="text/javascript"></script>
+        
+        <!-- Services -->
+        <script src="js/services/login.service.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/login.controller.js"></script>
+        <script src="js/controllers/app.controller.js"></script>
+        <script src="js/controllers/main.controller.js"></script>
+    </body>
+</html>
